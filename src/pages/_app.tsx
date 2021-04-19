@@ -6,9 +6,10 @@ import Head from 'next/head'
 import { ThemeProvider } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import { AppProps } from 'next/app'
+import 'tailwindcss/tailwind.css'
 import theme from '../lib/front/theme'
 
-export default function MyApp({ Component, pageProps }:AppProps) {
+export default function MyApp({ Component, pageProps }: AppProps) {
   React.useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side')
